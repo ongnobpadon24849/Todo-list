@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>To-do List</h1>
+    <div class="input-group">
+      <input type="text" id="todo-topic" placeholder="Add a new topic..." />
+      <textarea id="todo-task" placeholder="Add a new task..." rows="5"></textarea>
+      <div class="input-status">
+        <input type="text" id="todo-duedate" placeholder="Add a due date... (ex:2025/06/20)" />
+        <div class="status-wrapper">
+          <span id="status-dot" class="status-dot"></span>
+          <select id="todo-status">
+            <option value="not-started">Not Started</option>
+            <option value="in-progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+        <button id="add-btn" class="add-btn">Add</button>
+      </div>
+    </div>
+  </div>
+  <div id="todo-list" class="todo-list"></div>
+  <script src="script.js"></script>
+</body>
+</html>
